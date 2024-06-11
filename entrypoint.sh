@@ -1,4 +1,6 @@
-#!/bin/bash -l
+#!/bin/sh
+
+cd $GITHUB_WORKSPACE
 
 COMMAND="goimports -local $1 -l -e ."
 

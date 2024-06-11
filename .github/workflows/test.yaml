@@ -1,0 +1,13 @@
+name: test
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run goimports
+        continue-on-error: true
+        uses: ./
+        with:
+          local: "local-package"
