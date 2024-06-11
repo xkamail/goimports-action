@@ -1,0 +1,17 @@
+name: "Goimports Check Action"
+description: "goimports check"
+
+inputs:
+  local:
+    description: "The local package name"
+    required: true
+    default: ""
+  
+outputs:
+  goimports-output:
+    description: ""
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.local }}
