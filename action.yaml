@@ -1,4 +1,4 @@
-name: "Goimports Check Action"
+name: "Goimports linter action"
 description: "goimports check"
 author: "xKamaiL"
 
