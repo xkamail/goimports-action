@@ -1,5 +1,6 @@
 name: "Goimports Check Action"
 description: "goimports check"
+author: "xKamaiL"
 
 inputs:
   local:
